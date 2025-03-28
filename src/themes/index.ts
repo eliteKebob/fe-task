@@ -94,6 +94,30 @@ const themeOptions: ThemeOptions = {
               : "#3d7dc8 !important",
           color: "#fff !important",
         },
+        ".product-detail": {
+          backgroundColor:
+            theme.palette.mode === "dark"
+              ? "#212630 !important"
+              : "#ffffffb5 !important",
+        },
+        ".product-card:hover .product-detail": {
+          backgroundColor:
+            theme.palette.mode === "dark"
+              ? "#2b3445 !important"
+              : "#dfdfdf !important",
+        },
+        ".sticky-header": {
+          background: theme.palette.mode === "dark" ? "#212630c9" : "#ffffffc7",
+          "@media (max-width: 768px)": {
+            background: theme.palette.mode === "dark" ? "#252d3d" : "#fff",
+          },
+        },
+        ".mobile-bottom-bar-wrapper": {
+          background: theme.palette.mode === "dark" ? "#252d3d" : "#fff",
+        },
+        ".hamburger-menu-wrapper": {
+          backgroundColor: theme.palette.mode === "dark" ? "#171a21" : "#fff",
+        },
       }),
     },
   },

@@ -14,3 +14,18 @@ a:visited,
 a:-webkit-any-link {
   color: currentColor;
 }
+
+.icon-indicator {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  min-width: 24px;
+}
+
+.icon-indicator-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}

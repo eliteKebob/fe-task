@@ -8,22 +8,9 @@ interface IIconWithIndicator {
 
 const IconWithIndicator: React.FC<IIconWithIndicator> = ({ icon, count }) => {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        position: "relative",
-        cursor: "pointer"
-      }}
-    >
+    <Box className="icon-indicator-wrapper">
       {icon}
-      <Chip
-        label={count}
-        size="small"
-        className="icon-indicator"
-        sx={{ position: "absolute", top: "-20px", right: "-20px", minWidth: "24px" }}
-      ></Chip>
+      <Chip label={count} size="small" className="icon-indicator"></Chip>
     </Box>
   );
 };

@@ -1,0 +1,18 @@
+.products-wrapper{ width:100vw; display:flex; justify-content:start; align-items:center; padding:0 10vw; flex-wrap:wrap; gap:1.6vw }
+.products-wrapper .product-card{ width:12vw; margin-top:1rem; box-shadow:0 2px 8px rgba(0,0,0,.12); border-radius:15px; cursor:pointer }
+.products-wrapper .product-card:hover:not(.passive) .pc-img-wrapper .product-content{ display:flex }
+.products-wrapper .product-card.passive img{ filter:blur(3px) }
+.products-wrapper .product-card .pc-img-wrapper{ width:100%; aspect-ratio:216/260; position:relative }
+.products-wrapper .product-card .pc-img-wrapper svg.product-not-found{ color:#daa520; position:absolute; top:5px; right:5px; z-index:5; font-size:2.5rem }
+.products-wrapper .product-card .pc-img-wrapper img{ border-radius:15px 15px 0 0 }
+.products-wrapper .product-card .pc-img-wrapper .product-content{ position:absolute; display:none; flex-direction:column; justify-content:center; align-items:center; gap:8px; backdrop-filter:blur(10px); width:100%; aspect-ratio:216/260; padding:8px }
+.products-wrapper .product-card .pc-img-wrapper .product-content a.product-title{ width:100%; font-size:15px; text-align:center; color:#fff !important }
+.products-wrapper .product-card .pc-img-wrapper .product-content .product-stars{ display:flex; align-items:center; gap:4px }
+.products-wrapper .product-card .pc-img-wrapper .product-content .product-stars svg{ color:#daa520 !important; font-size:12px }
+.products-wrapper .product-card .pc-img-wrapper .product-content .product-stars span{ font-size:12px; font-weight:300; margin-left:5px; color:#fff !important }
+.products-wrapper .product-card .pc-img-wrapper .product-content button,.products-wrapper .product-card .pc-img-wrapper .product-content a:not(.product-title){ color:#fff !important; background-color:#3d7dc8 !important; border-radius:5px; font-size:11px; padding:3px 6px }
+.products-wrapper .product-card .pc-img-wrapper .product-content button svg,.products-wrapper .product-card .pc-img-wrapper .product-content a:not(.product-title) svg{ font-size:12px; margin-left:3px }
+.products-wrapper .product-card p{ height:66px; width:100%; display:flex; justify-content:center; align-items:center; font-size:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-weight:600; border-radius:0 0 15px 15px }
+@media(max-width:768px){ .products-wrapper{display:grid; padding:0 2vw; grid-template-columns:repeat(2,1fr); gap:2vw }
+.products-wrapper .product-card{ width:48vw }
+}

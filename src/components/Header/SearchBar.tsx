@@ -8,6 +8,7 @@ const SearchBar = () => {
       <TextField
         placeholder="Ürün, kategori veya ilan ara"
         variant="filled"
+        fullWidth
         slotProps={{
           input: {
             endAdornment: (

@@ -15,7 +15,7 @@ const Logo: React.FC<ILogo> = ({ width, height }) => {
   const { darkMode } = useAppSelector((state) => state.ui);
   return (
     <Box
-      sx={{ display: "flex", alignItems: "center", position: "relative" }}
+      sx={{ display: "flex", alignItems: "center", position: "relative", minWidth: width, minHeight: height }}
       width={width}
       height={height}
     >

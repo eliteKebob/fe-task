@@ -1,11 +1,22 @@
-import { ProductsListResponse } from "@/shared/types/product.types";
 import React from "react";
-import "./page.scss";
+import { ProductsListResponse } from "@/shared/types/product.types";
+import "@/styles/page.scss";
 import ProductList from "@/components/Product/ProductList";
 
 async function getProducts() {
-  const res = await fetch("http://localhost:3000/api/products");
-  return res.json();
+  try {
+    const response = await fetch(process.env.BASE_API_URL! + "/Products/List", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.API_TOKEN!}`,
+        "Content-Type": "application/json",
+      },
+    });
+
+    return response.json();
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 export default async function HomePage() {
@@ -18,6 +29,9 @@ interface IHome {
 }
 
 function Home({ products }: IHome) {
-  // return <div>debug</div>
-  return <ProductList products={products.data} />;
+  return (
+    <React.Fragment>
+      <ProductList products={products.data} />
+    </React.Fragment>
+  );
 }

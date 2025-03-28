@@ -6,7 +6,7 @@ export async function GET() {
     const response = await fetch(process.env.BASE_API_URL! + "/Products/List", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${process.env.API_TOKEN}`,
+        Authorization: `Bearer ${process.env.API_TOKEN!}`,
         "Content-Type": "application/json",
       },
     });

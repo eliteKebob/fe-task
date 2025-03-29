@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Hyper Teknoloji - Frontend Case
 
-## Getting Started
+[Canlı Demo](fe-task-mu.vercel.app/)
 
-First, run the development server:
+# Kurulum
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Projeyi bilgisayarımıza klonladıktan sonra gerekli kütüphaneleri yüklemek için proje dizininde `npm install` komutunu çalıştırıyoruz. (bilgisayarda node kurulu olmalıdır)
+- Yine proje dizininde `.env` dosyamızı oluşturup `.example.env` formatında `API_TOKEN` tanımlamasını yapıyoruz.
+- `npm run dev` komutu ile sunucuyu başlattıktan  `http://localhost:3000` tarayıcıda bu adrese gidip sonucu görebiliriz
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Proje Açıklaması
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Hyper Teknoloji API'sini kullanarak ürünleri listeleme uygulaması. Kullanılan teknolojiler: Next.js, Redux, MUI, SCSS
 
-## Learn More
+- Header ve footer mobil ekranlarda da uyumlu olacak şekilde entegre edildi.
+- Ürünler sayfasında SSR kullanıldı bu sayede SEO yapılabilecek duruma geldi.
+- Ürün bulunamadı uyarısı eklendi ve ürünler sayfasına infinite scroll entegre edildi.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

@@ -14,5 +14,5 @@
 .products-wrapper .product-card .pc-img-wrapper .product-content button svg,.products-wrapper .product-card .pc-img-wrapper .product-content a:not(.product-title) svg{ font-size:12px; margin-left:3px }
 .products-wrapper .product-card p{ height:66px; width:100%; display:flex; justify-content:center; align-items:center; font-size:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-weight:600; border-radius:0 0 15px 15px }
 @media(max-width:768px){ .products-wrapper{display:grid; padding:0 2vw; grid-template-columns:repeat(2,1fr); gap:2vw }
-.products-wrapper .product-card{ width:48vw }
+.products-wrapper .product-card{ width:47vw }
 }

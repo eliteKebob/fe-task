@@ -6,6 +6,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  overflow: hidden scroll;
+}
+
 a {
   text-decoration: none;
 }
